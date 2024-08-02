@@ -1,6 +1,5 @@
 import styles from './walletTable.module.scss'
-import {useEffect, useState} from "react";
-import {set} from "immutable";
+import {useState} from "react";
 import ModalViewWallet from "@/components/walletTable/modalViewWallet/modalViewWallet";
 
 interface Wallet {

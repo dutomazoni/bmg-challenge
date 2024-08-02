@@ -4,7 +4,6 @@ import TextField from "@mui/material/TextField";
 import {Button, CircularProgress} from "@mui/material";
 import {api} from "@/services/api";
 import {toast} from "react-toastify";
-import NewInvestment from "@/components/walletActions/modalManageWallet/newInvestment";
 import InvestmentsTable from "@/components/walletActions/modalManageWallet/investmentsTable";
 
 interface Wallet {

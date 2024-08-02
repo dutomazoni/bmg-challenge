@@ -8,7 +8,6 @@ import WalletActions from "@/components/walletActions/walletActions";
 import WalletTable from "@/components/walletTable/walletTable";
 import {CircularProgress} from "@mui/material";
 import {api} from "@/services/api";
-import {toast} from "react-toastify";
 
 interface User {
 	access_token: string;

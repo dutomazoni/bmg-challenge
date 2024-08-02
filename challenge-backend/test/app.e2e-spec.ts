@@ -15,8 +15,7 @@ describe('AppController (e2e)', () => {
   };
   let valid_token: string;
   let wallet: any;
-  let investment: any;
-
+  
   beforeEach(async () => {
     const moduleFixture: TestingModule = await Test.createTestingModule({
       imports: [AppModule],

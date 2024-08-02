@@ -48,8 +48,6 @@
   font-size: 14px;
   font-weight: 300 !important;
   line-height: 27.9px;
-  //margin: 0 auto;
-  //border-radius: 20px !important;
 
 }
 
@@ -65,34 +63,14 @@
   border-radius: 20px !important;
   text-align: left !important;
   z-index: 20;
-  &.Mui-focused {
-    & .MuiOutlinedInput-notchedOutline {
-      border: solid 2px #fb6300 !important;
-    }
-  }
-
-  &.Mui-error {
-    & .MuiOutlinedInput-notchedOutline {
-      border: solid 2px red !important;
-      background-color: #f6d6d3;
-      z-index: -5;
-    }
-  }
-
-  &.MuiInputBase-root {
-    background-color: lightgrey;
-  }
 }
 
 .formContainerLogin {
-  //overflow: auto;
   display: flex;
-  //height: 90vh;
   flex-direction: column;
   gap: 10px;
   padding: 1vmin;
   justify-content: start !important;
   min-width: 40vw !important;
-  //width: fit-content !important;
   max-width: 90vw;
 }

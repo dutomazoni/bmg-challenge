@@ -1,14 +1,14 @@
 .modal {
-  display: block; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 10; /* Sit on top */
+  display: block;
+  position: fixed;
+  z-index: 10;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
   @media screen and (max-width: 600px) {
     overflow: auto;
   }
@@ -16,12 +16,12 @@
 
 .modalContent {
   background-color: #fefefe;
-  margin: 110px auto; /* 15% from the top and centered */
+  margin: 110px auto;
   padding: 20px;
   border: 1px solid #888;
   border-radius: 20px;
-  width: 50%; /* Could be more or less, depending on screen size */
-  height: auto; /* Could be more or less, depending on screen size */
+  width: 50%;
+  height: auto;
   @media screen and (max-width: 600px) {
     width: 90vw;
   }
@@ -40,15 +40,12 @@
 }
 
 .formContainer {
-  //overflow: auto;
   display: flex;
-  //height: 90vh;
   flex-direction: column;
   gap: 10px;
   padding: 1vmin;
   justify-content: start !important;
   min-width: 40vw !important;
-  //width: fit-content !important;
   max-width: 90vw;
 }
 
@@ -63,23 +60,6 @@
   border-radius: 20px !important;
   text-align: left !important;
   z-index: 20;
-  &.Mui-focused {
-    & .MuiOutlinedInput-notchedOutline {
-      border: solid 2px #fb6300 !important;
-    }
-  }
-
-  &.Mui-error {
-    & .MuiOutlinedInput-notchedOutline {
-      border: solid 2px red !important;
-      background-color: #f6d6d3;
-      z-index: -5;
-    }
-  }
-
-  &.MuiInputBase-root {
-    background-color: lightgrey;
-  }
 }
 
 .textFieldSelect {
@@ -87,24 +67,6 @@
   border-radius: 20px !important;
   text-align: start;
   z-index: 20;
-
-  &.Mui-focused {
-    & .MuiOutlinedInput-notchedOutline {
-      border: solid 2px var(--palette-primary-main) !important;
-    }
-  }
-
-  &.Mui-error {
-    & .MuiOutlinedInput-notchedOutline {
-      z-index: -5 !important;
-      border: solid 2px red !important;
-      background-color: #f6d6d3;
-    }
-  }
-
-  &.MuiTextField-root {
-    background-color: white !important;
-  }
 }
 
 .btn {
@@ -119,7 +81,6 @@
   width: 219px !important;
   height: 40px !important;
   &:hover {
-    //box-shadow: 0 4px 10px rgba(0, 0, 0, 0.71);
     background-color: #AB4118 !important;
   }
   &:focus {
@@ -132,9 +93,6 @@
 }
 
 .btnDelete {
-
-  //background-color: #c50303 !important;
-  //color: white !important;
   background-color: white !important;
   color: #c50303 !important;
   border: #c50303 1px solid;
@@ -147,7 +105,6 @@
   width: 219px !important;
   height: 40px !important;
   &:hover {
-    //box-shadow: 0 4px 10px rgba(0, 0, 0, 0.71);
     background-color: #730101 !important;
     color: white !important;
   }
@@ -173,7 +130,6 @@
   width: 219px !important;
   height: 40px !important;
   &:hover {
-    //box-shadow: 0 4px 10px rgba(0, 0, 0, 0.71);
     background-color: #730101 !important;
     color: white !important;
   }
@@ -184,8 +140,6 @@
 }
 
 .btnEdit {
-  //background-color: #452a71 !important;
-  //color: white !important;
   background-color: white !important;
   color: #452a71 !important;
   border: solid 1px #452a71;
@@ -198,7 +152,6 @@
   width: 219px !important;
   height: 40px !important;
   &:hover {
-    //box-shadow: 0 4px 10px rgba(0, 0, 0, 0.71);
     background-color: #27183f !important;
     color: white !important;
   }
@@ -213,8 +166,6 @@
 }
 
 .btnInvest {
-  //background-color: #452a71 !important;
-  //color: white !important;
   background-color: white !important;
   color: #fb6300 !important;
   border: solid 1px #fb6300;
@@ -227,7 +178,6 @@
   width: 219px !important;
   height: 40px !important;
   &:hover {
-    //box-shadow: 0 4px 10px rgba(0, 0, 0, 0.71);
     background-color: #fb6300 !important;
     color: white !important;
   }

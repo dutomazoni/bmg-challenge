@@ -27,7 +27,6 @@
   width: 219px !important;
   height: 40px !important;
   &:hover {
-    //box-shadow: 0 4px 10px rgba(0, 0, 0, 0.71);
     background-color: #AB4118 !important;
   }
   &:focus {
@@ -51,35 +50,16 @@
   border-radius: 20px !important;
   text-align: left !important;
   z-index: 20;
-  &.Mui-focused {
-    & .MuiOutlinedInput-notchedOutline {
-      border: solid 2px #fb6300 !important;
-    }
-  }
 
-  &.Mui-error {
-    & .MuiOutlinedInput-notchedOutline {
-      border: solid 2px red !important;
-      background-color: #f6d6d3;
-      z-index: -5;
-    }
-  }
-
-  &.MuiInputBase-root {
-    background-color: lightgrey;
-  }
 }
 
 .formContainerRegister {
-  //overflow: auto;
   display: flex;
-  //height: 90vh;
   flex-direction: column;
   gap: 10px;
   padding: 1vmin;
   justify-content: start !important;
   min-width: 40vw !important;
-  //width: fit-content !important;
   max-width: 90vw;
 }
 
@@ -93,7 +73,4 @@
   cursor: pointer !important;
   align-self: center;
   display: flex;
-  //width: 25px;
-  //position: relative;
-  //margin-top: -2vmin !important;
 }

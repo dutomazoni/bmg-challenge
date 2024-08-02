@@ -24,7 +24,6 @@ const Login = () => {
 		
 		await api.post('/auth/login', { email: email, password: pwd }).then((response) => {
 			sessionStorage.setItem('user', JSON.stringify(response.data))
-			window.dispatchEvent(new Event("storage"));
 			toast(`Olá, ${response.data.user}! 👋`, {
 				icon: false,
 				position: 'top-center',
@@ -59,9 +58,9 @@ const Login = () => {
 		<div className={styles.containerLogin}>
 			<div className={styles.cardContainerLogin}>
 				<br/><br/>
-				 <h2 style={{ color: '#fb6300', textAlign: "center" }}>Entre na sua conta</h2>
+				<h2 style={{ color: '#fb6300', textAlign: "center" }}>Entre na sua conta</h2>
 				<Divider
-					style={{ width: '70%', margin: '15px auto 0', borderBottom: '3px solid #fb6300' }}/><br/>
+					style={{ width: '70%', margin: '15px auto 0', borderBottom: '3px solid #fb6300' }}/>
 				<br/><br/>
 				<div className={styles.formContainerLogin} style={{width: "auto"}}>
 					<label className={styles.inputLabelLogin}>E-MAIL*</label>
@@ -98,7 +97,6 @@ const Login = () => {
 						onClick={() => btnLogin()}>Entrar</Button>}
 					<br/>
 					<div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
-						{/*<div className={styles.forgotPwd} onClick={() => setModalForgotPwd(true)}>Esqueceu a senha?</div>*/}
 						<div className={styles.forgotPwd} onClick={() => router.push('/register')}>Clique aqui para cadastrar</div>
 					</div>
 					<br/>

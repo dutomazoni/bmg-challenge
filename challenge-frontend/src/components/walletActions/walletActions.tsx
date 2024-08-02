@@ -13,7 +13,6 @@ interface Wallet {
 }
 
 const WalletActions = (props: {user: { access_token: string, user: string}, setRefresh: any, wallets: Wallet[] | null }) => {
-	console.log(props.wallets)
 	const [modalAddWallet, setModalAddWallet] = useState(false);
 	const [modalEditWallet, setModalEditWallet] = useState(false);
 	return (

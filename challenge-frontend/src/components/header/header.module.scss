@@ -2,7 +2,6 @@
 .containerHeader {
   width: -webkit-fill-available !important;
   display: flex;
-  //height: 5vh;
   height: 100px !important;
   position: absolute;
   top: 0;
@@ -15,18 +14,12 @@
 }
 
 
-.MuiMenu-list {
-  background-color: #fb6300;
-  //border-radius:20px;
-}
-
 .itemsHeader {
   padding: 3vmax;
   width: -webkit-fill-available;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  //margin: 0 3vmax;
 }
 
 
@@ -54,7 +47,6 @@
     text-decoration: none;
   }
   font-size: 14px;
-  //
 }
 
 .logoContainer {
@@ -83,16 +75,12 @@
 
 .buttonHeader {
   display: flex;
-  //padding: 1vmin !important;
   background-color: #fb6300 !important;
   color:  #ffffff !important;
   border-radius: 100px;
   align-items: center !important;
   float: right !important;
   cursor: pointer;
-  //margin-right: 2rem;
-  //height: 2rem !important;
-  //width: fit-content !important;
   width: 147px !important;
   height: 40px !important;
   font-size: 14px !important;
@@ -103,16 +91,12 @@
 
 .buttonHeaderMenu {
   display: flex;
-  //padding: 1vmin !important;
   background-color: #fb6300 !important;
   color:  #ffffff !important;
   border-radius: 10px;
   align-items: center !important;
   float: right !important;
   cursor: pointer;
-  //margin-right: 2rem;
-  //height: 2rem !important;
-  //width: fit-content !important;
   width: 40px !important;
   height: 40px !important;
   font-weight: 500 !important;
@@ -143,7 +127,6 @@
 .loginText {
   cursor: pointer;
   padding: 10px 20px;
-  //text-decoration: underline;
   font-size: 14px !important;
   font-weight: 500 !important;
   line-height: 20px;
@@ -174,5 +157,4 @@
 .dropdown:hover .dropdownContent {
   display: flex;
   flex-direction: column;
-
 }

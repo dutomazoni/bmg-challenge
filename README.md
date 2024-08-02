@@ -26,7 +26,7 @@ Novamente, como o projeto está dividido em duas partes, primeiro iniciamos o **
 E depois o **front**:
 
     $ cd challenge-frontend
-    $ npm start
+    $ npm dev
 
 Para o funcionamento correto do projeto, são necessários os arquivos de variáveis de ambiente, **.env** para o backend e **.env.local** para o frontend.
 Estes arquivos serão enviados no email contendo a minha solução do desafio.
