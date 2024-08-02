@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.cardContainer {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  border: 2px solid #452a71;
+  border-radius: 15px;
+  background: linear-gradient(90deg, rgba(69,42,113,1) 0%, rgba(119,70,198,1) 55%, rgb(130, 79, 206) 100%);
+  @media screen and (max-width: 600px) {
+    width: 90vw;
+  }
+}
+
+.cardLeft {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding: 15px;
+  border-radius: 15px 0 0 15px;
+  //background: #452a71;
+  color: #fb6300;
+}
+
+.title {
+  font-size: 1.5rem !important;
+  font-weight: lighter;
+  @media screen and (max-width: 600px) {
+    font-size: 1rem;
+  }
+}
+
+.amount {
+  font-size: 3rem;
+  font-weight: bolder;
+  @media screen and (max-width: 600px) {
+    font-size: 1.5rem;
+  }
+}
+
+.cardRight {
+  display: flex;
+  width: 30%;
+  height: 200px;
+  border-radius: 0 15px 15px 0;
+  background-image: url("/savings.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  //border: 1px solid #452a71;
+  @media screen and (max-width: 600px) {
+    width: 70%;
+  }
+}

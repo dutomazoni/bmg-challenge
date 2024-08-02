@@ -1,0 +1,86 @@
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.card {
+
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  gap: 15px;
+  justify-content: space-evenly;
+  @media screen and (max-width: 600px) {
+    justify-content: center;
+    width: 100vw;
+  }
+
+}
+
+.tableContainer {
+  @media screen and (max-width: 600px) {
+    width: 90vw;
+  }
+  overflow: auto;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow:inset 2px 2px 2px 0px rgba(222,222,222,.2), 3px 3px 3px 0px rgba(0,0,0,.2);
+  table {
+    border-radius: 15px;
+    padding: 5px;
+    border: 1px solid #dededf;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 1px;
+    text-align: left;
+  }
+
+  th {
+    border-right: 1px solid #dededf;
+    background-color:  #452a71;
+    color: #fb6300;
+    font-size: 18px;
+    font-weight: bolder;
+    padding: 15px;
+  }
+
+  td {
+    border-right: 1px solid #dededf;
+    background-color: whitesmoke;
+    color: #452a71;
+    padding: 10px;
+  }
+
+  .actionColumn {
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fb6300;
+    text-decoration: underline;
+  }
+}
+
+.paginationControls {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.paginationButton {
+  border: 1px solid #fb6300;
+  color: #fb6300;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 4px;
+  cursor: pointer;
+  background-color: whitesmoke;
+  &:hover, &:focus {
+    background-color: #fb6300;
+    color: white;
+  }
+}
+
+

@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  margin-top: 120px;
+  position: relative;
+  overflow: auto;
+  justify-content: center;
+  /*align-items: center;*/
+}
+
+.title {
+  text-align: center;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  padding: 0 10vmax;
+  position: relative;
+  width: 100%;
+}

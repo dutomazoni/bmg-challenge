@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.cardContainer {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  gap: 15px;
+  justify-content: space-evenly;
+  @media screen and (max-width: 600px) {
+    justify-content: center;
+    width: 90vw;
+  }
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  background: whitesmoke;
+  color: #fb6300;
+  border-radius: 15px;
+  padding: 15px;
+  height: 175px;
+  width: 100%;
+  cursor: pointer;
+  justify-content: center;
+  box-shadow:inset 2px 2px 2px 0px rgba(222,222,222,.2), 3px 3px 3px 0px rgba(0,0,0,.2);
+  &:hover {
+    background: #fb6300;
+    color: white;
+  }
+
+}
+
+.buttonIcon {
+  align-self: center;
+  font-size: 40px !important;
+}
+
+.buttonText {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}

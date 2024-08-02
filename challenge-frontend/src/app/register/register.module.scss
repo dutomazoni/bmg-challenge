@@ -1,0 +1,99 @@
+.containerRegister {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  margin-top: 60px;
+  position: relative;
+  overflow: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardContainerRegister {
+  overflow: auto;
+  padding: 0 10vmax;
+  position: relative;
+}
+
+.btnRegister {
+  background-color: #fb6300 !important;
+  color: white !important;
+  align-self: center !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  font-weight: 500 !important;
+  padding: 2vmin !important;
+  border-radius: 20px !important;
+  width: 219px !important;
+  height: 40px !important;
+  &:hover {
+    //box-shadow: 0 4px 10px rgba(0, 0, 0, 0.71);
+    background-color: #AB4118 !important;
+  }
+  &:focus {
+    outline: none !important;
+  }
+  &:disabled {
+    background: grey !important;
+    border: grey 1px solid !important;
+  }
+}
+
+.inputLabelRegister {
+  color: #fb6300 !important;
+  text-align: left !important;
+  font-weight: 500 !important;
+  font-size: 16px;
+}
+
+.textFieldRegister {
+  background-color: lightgrey;
+  border-radius: 20px !important;
+  text-align: left !important;
+  z-index: 20;
+  &.Mui-focused {
+    & .MuiOutlinedInput-notchedOutline {
+      border: solid 2px #fb6300 !important;
+    }
+  }
+
+  &.Mui-error {
+    & .MuiOutlinedInput-notchedOutline {
+      border: solid 2px red !important;
+      background-color: #f6d6d3;
+      z-index: -5;
+    }
+  }
+
+  &.MuiInputBase-root {
+    background-color: lightgrey;
+  }
+}
+
+.formContainerRegister {
+  //overflow: auto;
+  display: flex;
+  //height: 90vh;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1vmin;
+  justify-content: start !important;
+  min-width: 40vw !important;
+  //width: fit-content !important;
+  max-width: 90vw;
+}
+
+.btnGoBackRegister {
+  background-color: #fb6300 !important;
+  color: white !important;
+  border-radius: 50%;
+  border: none !important;
+  float: left !important;
+  padding: 1vmin;
+  cursor: pointer !important;
+  align-self: center;
+  display: flex;
+  //width: 25px;
+  //position: relative;
+  //margin-top: -2vmin !important;
+}
