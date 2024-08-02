@@ -1,0 +1,214 @@
+openapi: 3.0.0
+info:
+  title: bmg
+  version: 1.0.0
+servers:
+  - url: localhost://
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+tags:
+  - name: auth
+  - name: users
+  - name: wallets
+  - name: investments
+paths:
+  /5001/auth/login:
+    post:
+      tags:
+        - auth
+      summary: Send this request to get your access_token and use it in the authorize session.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                email: teste@
+                password: teste
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: { }
+  /5001/user:
+    get:
+      tags:
+        - users
+      summary: get all users
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+    post:
+      tags:
+        - users
+      summary: create user
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                email: teste
+                password: teste
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /5001/user/teste:
+    get:
+      tags:
+        - users
+      summary: get user by email
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /5001/wallet/teste@email.com:
+    get:
+      tags:
+        - wallets
+      summary: get wallets by email
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /5001/wallet/id/5:
+    get:
+      tags:
+        - wallets
+      summary: get wallet by id
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /5001/wallet:
+    post:
+      tags:
+        - wallets
+      summary: create wallet
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                name: teste
+                user: teste@email.com
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+    patch:
+      tags:
+        - wallets
+      summary: update wallet
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                id: 2
+                name: teste edit
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /5001/wallet/2:
+    delete:
+      tags:
+        - wallets
+      summary: delete wallet
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /5001/investment:
+    post:
+      tags:
+        - investments
+      summary: create investmnet
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                company: teste add
+                wallet: 5
+                amount: 100
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+    patch:
+      tags:
+        - investments
+      summary: update investment
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                company: teste
+                wallet: 5
+                amount: 200
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /5001/investment/5:
+    get:
+      tags:
+        - investments
+      summary: find by wallet
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /5001/investment/11:
+    delete:
+      tags:
+        - investments
+      summary: update investment Copy
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}

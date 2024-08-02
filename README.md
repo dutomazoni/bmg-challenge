@@ -31,7 +31,7 @@ E depois o **front**:
 Para o funcionamento correto do projeto, são necessários os arquivos de variáveis de ambiente, **.env** para o backend e **.env.local** para o frontend.
 Estes arquivos serão enviados no email contendo a minha solução do desafio.
 
-Também será enviada uma collection do Postman para utilização da API no ambiente local.
+Também será enviada uma collection do Postman para utilização da API no ambiente local, além do [Swagger](challenge-backend/swagger.yaml).
 >[!CAUTION]
 > **Lembrando de utilizar a mesma porta especificada no arquivo .env**.
 
@@ -53,6 +53,7 @@ A autenticação foi feita usando **token JWT**, que ficam salvos na sessionStor
 
 O projeto tem somente duas páginas, uma para a realização do Login/Criação de conta de usuário e
 uma de dashboard, com as informações e ações relacionadas as carteiras de investimentos.
+
 
 ## Features Futuras
 
